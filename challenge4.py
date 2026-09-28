@@ -11,14 +11,14 @@ for i in range(1, number + 1):
 
 
 for i in range(1, number2 + 1):
-    if number % i ==0:
+    if number2 % i ==0:
         factor2.append(i)
 
 x = 0 
 for i in range(len(factor)):
     for i in range(len(factor2)):
         if factor[x] == factor2[i]:
-            gcf.append(factor2[x])
+            gcf.append(factor[x])
     x+=1
 
 print(f"The greatest common factor is {gcf[-1]}.")
